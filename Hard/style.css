@@ -1,0 +1,397 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-section {
+    width: 50%;
+    height: 100%;
+    background: #ffffff;
+    position: relative;
+    padding: 40px 50px;
+}
+
+
+
+.left-header {
+    display: flex;
+    align-items: center;
+    gap: 95px;
+}
+
+.logo {
+    font-size: 34px;
+    color: #102f29;
+    font-weight: 700;
+}
+
+
+
+.search {
+    width: 345px;
+    height: 52px;
+    border-radius: 40px;
+    background: #f0f0f0;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.search-icon {
+    font-size: 30px;
+    color: #444;
+}
+
+.search input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+}
+
+
+.classification {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+
+    top: 20%;
+    left: 12%;
+
+    gap: 110px;
+}
+
+.classification h2 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 500;
+
+    color: #10372e;
+}
+
+
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.detail {
+    width: 245px;
+
+    display: flex;
+    gap: 18px;
+
+    padding-bottom: 15px;
+
+    border-bottom: 1px solid #dddddd;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+
+    background: #b83b35;
+    border-radius: 50%;
+
+    margin-top: 8px;
+
+    flex-shrink: 0;
+}
+
+.detail h3 {
+    font-size: 19px;
+    margin-bottom: 6px;
+    color: #222;
+}
+
+.detail p {
+    font-size: 19px;
+    color: #333;
+}
+
+
+
+.right-section {
+    width: 50%;
+    height: 100%;
+
+    background: #b9342e;
+
+    position: relative;
+
+    color: white;
+}
+
+
+
+.right-header {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 50px;
+}
+
+.right-header nav {
+    display: flex;
+    gap: 70px;
+}
+
+.right-header a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.product-info {
+    position: absolute;
+
+    top: 17%;
+    left: 39%;
+}
+
+.product-info h1 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 58px;
+    line-height: 1.1;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+
+
+.specifications {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+
+
+.insect-icon {
+    width: 105px;
+    min-width: 105px;
+    height: 110px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    padding-right: 25px;
+}
+
+
+.insect-icon::after {
+    content: "";
+
+    width: 2px;
+    height: 110px;
+
+    background: #e6c7a0;
+
+    position: absolute;
+
+    right: 0;
+    top: 0;
+}
+
+
+.insect-icon img {
+    width: 75px;
+    height: 75px;
+
+    object-fit: contain;
+}
+
+.insect-icon p {
+    font-size: 17px;
+    margin-top: 5px;
+    color: white;
+}
+
+
+
+.spec-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.spec {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.spec span {
+    font-size: 35px;
+    color: #e7c49a;
+}
+
+.spec p {
+    font-size: 17px;
+}
+
+.spec h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+
+
+.ruler-icon {
+    width: 38px;
+    height: 38px;
+
+    object-fit: contain;
+
+    filter: brightness(0) invert(1);
+}
+
+
+
+.price {
+    font-size: 45px;
+    color: #f1d2a1;
+
+    margin-top: 25px;
+}
+
+
+
+.options {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+
+    margin-top: 25px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.options input {
+    display: none;
+}
+
+
+
+.toggle {
+    width: 40px;
+    height: 23px;
+
+    background: #e6bcb6;
+
+    border-radius: 30px;
+
+    position: relative;
+}
+
+.toggle::before {
+    content: "";
+
+    width: 17px;
+    height: 17px;
+
+    background: white;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 3px;
+    left: 4px;
+}
+
+
+
+
+
+.collection-btn {
+    width: 260px;
+    height: 62px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #e6c99f;
+
+    font-size: 19px;
+
+    margin-top: 35px;
+
+    cursor: pointer;
+}
+
+.collection-btn:hover {
+    background: #f0d9b5;
+}
+
+
+
+.jar {
+    width: 400px;
+
+    position: absolute;
+
+    left: 38.5%;
+    top: 18%;
+
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jar img {
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
