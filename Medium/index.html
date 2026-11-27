@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gunaforycter | Drinks & Dining</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="brand">
+      <h1>Gunaforycter</h1>
+      <div class="brand-mark" aria-hidden="true">
+        <span></span><img src="./assets/icon'.png" alt="icon"><span></span>
+      </div>
+    </header>
+
+    <section class="drinks-grid" id="drinks" aria-label="Signature drinks">
+      <article class="drink-card featured">
+        <div class="badge">★ &nbsp;Signature</div>
+        <div class="drink-image-wrap">
+          <img src="assets/SunFlame.png" alt="Sunset Flame drink">
+        </div>
+        <h2>Sunset Flame</h2>
+        <p>Tropical &amp; Refreshing</p>
+        <div class="mini-line"></div>
+        <strong>$12.94</strong>
+      </article>
+
+      <article class="drink-card">
+        <div class="drink-image-wrap">
+          <img src="assets/tropical-passion.png" alt="Tropical Passion drink">
+        </div>
+        <h2>Tropical Passion</h2>
+        <p>Fruity &amp; Exotic</p>
+        <div class="mini-line"></div>
+        <strong>$11.04</strong>
+      </article>
+
+      <article class="drink-card">
+        <div class="drink-image-wrap">
+          <img src="assets/citrus-dawn.png" alt="Citrus Dawn drink">
+        </div>
+        <h2>Citrus Dawn</h2>
+        <p>Citrusy &amp; Energizing</p>
+        <div class="mini-line"></div>
+        <strong>$10.13</strong>
+      </article>
+
+      <article class="drink-card">
+        <div class="badge new">● &nbsp;New</div>
+        <div class="drink-image-wrap">
+          <img src="assets/Breeze,png.png" alt="Berry Breeze drink">
+        </div>
+        <h2>Berry Breeze</h2>
+        <p>Sweet &amp; Cool</p>
+        <div class="mini-line"></div>
+        <strong>$9.48</strong>
+      </article>
+    </section>
+
+    <section class="chef-panel" id="menu">
+      <div class="food-visual">
+        <img src="assets/chefs-special.png" alt="Chef's special platter">
+      </div>
+      <div class="chef-copy">
+        <div class="eyebrow">CHEF'S SPECIAL</div>
+        <h2>Bouliauts for Iaguancns</h2>
+        <p class="lead">Experience our signature culinary creations.</p>
+        <p>Meticulously crafted with premium ingredients to deliver exceptional flavors and an unforgettable dining experience. Perfect for sharing or savoring on your own.</p>
+        <a class="menu-button" href="#drinks">Explore Menu <span>→</span></a>
+      </div>
+      <img class="leaf" src="assets/leaf-decoration.png" alt="" aria-hidden="true">
+    </section>
+
+    <footer>
+      <div class="copyright">© Gunaforycter 2025</div>
+      <nav aria-label="Footer navigation">
+        <a href="#top">Explore</a>
+        <i>•</i>
+        <a href="#menu">Food Menu</a>
+        <i>•</i>
+        <a href="#drinks">Drinks</a>
+        <i>•</i>
+        <a href="#menu">Reservations</a>
+      </nav>
+      <div class="social">
+        <span>Follow Us</span>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Twitter">♥</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.documentElement.id = "top";
+    document.querySelector(".menu-button").addEventListener("click", function(e) {
+      e.preventDefault();
+      document.querySelector("#drinks").scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
